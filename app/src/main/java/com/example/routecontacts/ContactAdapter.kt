@@ -7,7 +7,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
-class ContactAdapter(val contactList: List<ContactData>?) :
+class ContactAdapter(private val contactList: List<ContactData>?) :
     RecyclerView.Adapter<ContactAdapter.MyViewHolder>() {
     class MyViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         val profileImg: ImageView = itemView.findViewById(R.id.contact_img)

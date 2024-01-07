@@ -53,6 +53,7 @@ class MainActivity : AppCompatActivity() {
 
             if (name.length >= 3 && phoneNumber.length == 11) {
                 val contactItem = ContactData(profileImg = R.drawable.contact_img, name, phoneNumber, description)
+                // when i convert phoneNumber.toInt() , it doesn't read the first 0 on left hand side
                 contactList.add(contactItem)
 
                 // tell the adapter that the data has changed
