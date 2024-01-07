@@ -28,7 +28,7 @@ class ContactAdapter(private val contactList: List<ContactData>?) :
         val contact = contactList?.get(position)
         contact?.profileImg?.let { holder.profileImg.setImageResource(it) }
         contact?.profileName?.let { holder.profileName.text = it }
-        contact?.profilePhone?.let { holder.profilePhone.text = it.toString() }
+        contact?.profilePhone?.let { holder.profilePhone.text = it }
         if (onContactClickListener !=null){
             holder.itemView.setOnClickListener {
                 if (contact != null) {
